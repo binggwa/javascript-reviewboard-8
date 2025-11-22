@@ -1,0 +1,294 @@
+{
+  "savedAt": "2025-11-16T04:44:10.172Z",
+  "params": {
+    "lat": 37.480632,
+    "lng": 127.14587,
+    "radius": 2000,
+    "types": [
+      "restaurant"
+    ],
+    "limit": 20
+  },
+  "items": [
+    {
+      "id": "ChIJ1TVb__WlfDURGMbGsBLuvjQ",
+      "formattedAddress": "108 Songpa-daero, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.480466899999996,
+        "longitude": 127.12581049999999
+      },
+      "rating": 4.2,
+      "userRatingCount": 820,
+      "displayName": {
+        "text": "Suwonjib",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJs9ww_HqvfDURzkCxLPqt9aA",
+      "formattedAddress": "40 Dongnam-ro 18-gil, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4930115,
+        "longitude": 127.1339818
+      },
+      "rating": 4.3,
+      "userRatingCount": 768,
+      "displayName": {
+        "text": "Plaza Handmade Kalguksu",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ-zAGD2SvfDURjzKxqX3VOAY",
+      "formattedAddress": "239 Songi-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.487987800000006,
+        "longitude": 127.13171
+      },
+      "rating": 4,
+      "userRatingCount": 684,
+      "displayName": {
+        "text": "Burger King",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ49eYxfelfDUR9p_8M4uzqDM",
+      "formattedAddress": "66 Chungmin-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4770543,
+        "longitude": 127.12597609999999
+      },
+      "rating": 3.8,
+      "userRatingCount": 680,
+      "displayName": {
+        "text": "Nature Kitchen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJDVks2PSlfDUReRdaN7NRwLU",
+      "formattedAddress": "66 Chungmin-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4774074,
+        "longitude": 127.1258742
+      },
+      "rating": 3.7,
+      "userRatingCount": 581,
+      "displayName": {
+        "text": "Ashley Queens",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJFyJATVqvfDURC4RespCUN2g",
+      "formattedAddress": "28-17 Wiryeseoil-ro 3-gil, Sujeong-gu, Seongnam-si, South Korea",
+      "location": {
+        "latitude": 37.468355599999995,
+        "longitude": 127.13979219999999
+      },
+      "rating": 4.3,
+      "userRatingCount": 344,
+      "displayName": {
+        "text": "전주콩뿌리콩나물국밥 위례점",
+        "languageCode": "ko"
+      }
+    },
+    {
+      "id": "ChIJHfblxGavfDURlKmK3K0gR0g",
+      "formattedAddress": "172 Saemal-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.485523199999996,
+        "longitude": 127.13204830000001
+      },
+      "rating": 4.2,
+      "userRatingCount": 260,
+      "displayName": {
+        "text": "Myeongryun Jinsa Pork Ribs",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ49eYxfelfDURpzGWW5hWWbs",
+      "formattedAddress": "66 Chungmin-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4775777,
+        "longitude": 127.125723
+      },
+      "rating": 4.2,
+      "userRatingCount": 180,
+      "displayName": {
+        "text": "Dookki",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJo_sxEQevfDURr5_0zZmp-CM",
+      "formattedAddress": "South Korea, Seoul, Songpa District, Wiryegwangjang-ro, 120 위례중앙푸르지오1단지상가 1층 112호",
+      "location": {
+        "latitude": 37.474926700000005,
+        "longitude": 127.1420462
+      },
+      "rating": 4.3,
+      "userRatingCount": 152,
+      "displayName": {
+        "text": "Miari Udon",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJIQA_ttivfDURFQtnKi_lTC4",
+      "formattedAddress": "South Korea, Gyeonggi-do, Seongnam-si, Sujeong-gu, 위례광장로 104 2층 2201호",
+      "location": {
+        "latitude": 37.4736821,
+        "longitude": 127.14149760000001
+      },
+      "rating": 4.4,
+      "userRatingCount": 152,
+      "displayName": {
+        "text": "촌놈집 위례",
+        "languageCode": "ko"
+      }
+    },
+    {
+      "id": "ChIJzS1o0DmvfDURjU_NKssPiNM",
+      "formattedAddress": "South Korea, Gyeonggi-do, Seongnam-si, Sujeong-gu, Wiryegwangjang-ro, 70 108 호 109 호",
+      "location": {
+        "latitude": 37.4707856,
+        "longitude": 127.14136730000001
+      },
+      "rating": 4.2,
+      "userRatingCount": 117,
+      "displayName": {
+        "text": "집나간고등어",
+        "languageCode": "ko"
+      }
+    },
+    {
+      "id": "ChIJw6XqUF-vfDURkIZLrHb-9W0",
+      "formattedAddress": "13 Saemal-ro 8-gil, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4815069,
+        "longitude": 127.12678310000001
+      },
+      "rating": 4.5,
+      "userRatingCount": 114,
+      "displayName": {
+        "text": "ChoKwang 201",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ11BLgI2vfDURlbtU_lgFPXg",
+      "formattedAddress": "290 Wiryegwangjang-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4751441,
+        "longitude": 127.14269130000001
+      },
+      "rating": 4.2,
+      "userRatingCount": 91,
+      "displayName": {
+        "text": "McDonald's",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ5cLGg0mvfDURtcOl6Oio41c",
+      "formattedAddress": "South Korea, Gyeonggi-do, Seongnam-si, Sujeong-gu, Changgok-dong, 554-4 KR",
+      "location": {
+        "latitude": 37.4662206,
+        "longitude": 127.13842040000002
+      },
+      "rating": 4.8,
+      "userRatingCount": 91,
+      "displayName": {
+        "text": "Katsu-Omoi Wirye",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ_3yND9elfDUR1ZsKBWFumrI",
+      "formattedAddress": "66 Chungmin-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4780973,
+        "longitude": 127.12528750000001
+      },
+      "rating": 4.3,
+      "userRatingCount": 65,
+      "displayName": {
+        "text": "Loun Shabu Buffet",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQ1mXa9WvfDUR9j1Kt0gmBKw",
+      "formattedAddress": "114 Saemal-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4826451,
+        "longitude": 127.1265871
+      },
+      "rating": 4.8,
+      "userRatingCount": 61,
+      "displayName": {
+        "text": "푼주",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJwUOZaDilfDURGGF0Rb5sMv0",
+      "formattedAddress": "66 Chungmin-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.4784238,
+        "longitude": 127.12432559999999
+      },
+      "rating": 4.1,
+      "userRatingCount": 37,
+      "displayName": {
+        "text": "VIPS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ45hDXAuvfDURCxkc60e2c0Q",
+      "formattedAddress": "South Korea, Seoul, Songpa District, 위례광장로 120 위례중앙푸르지오1단지 1층 155호",
+      "location": {
+        "latitude": 37.4744826,
+        "longitude": 127.14183209999999
+      },
+      "rating": 4.1,
+      "userRatingCount": 35,
+      "displayName": {
+        "text": "Udaepo",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXdURCQCvfDURguKAKF_Ce1A",
+      "formattedAddress": "290 Wiryegwangjang-ro, Songpa District, Seoul, South Korea",
+      "location": {
+        "latitude": 37.474390799999995,
+        "longitude": 127.14291899999999
+      },
+      "rating": 4.7,
+      "userRatingCount": 26,
+      "displayName": {
+        "text": "제줏간 위례중앙광장점",
+        "languageCode": "ko"
+      }
+    },
+    {
+      "id": "ChIJG9SS_2OvfDURhKv3JEu_9DQ",
+      "formattedAddress": "South Korea, Seoul, Songpa District, Munjeong-dong, 115-6번지 1층 4호",
+      "location": {
+        "latitude": 37.4875641,
+        "longitude": 127.13114449999999
+      },
+      "rating": 4.4,
+      "userRatingCount": 15,
+      "displayName": {
+        "text": "새론김밥",
+        "languageCode": "ko"
+      }
+    }
+  ]
+}
