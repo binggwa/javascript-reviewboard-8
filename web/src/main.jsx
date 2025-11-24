@@ -1,10 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import './index.css';
+import App from './App.jsx';
+
+const theme = createTheme({
+  typography: {
+    fontFamily:
+      "'Comic Sans MS', 'Comic Sans', 'Segoe UI Rounded', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  },
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   </StrictMode>,
-)
+);

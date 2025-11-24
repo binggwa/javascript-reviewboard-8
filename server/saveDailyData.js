@@ -69,7 +69,7 @@ async function fetchNearbyPlacesForSnapshot() {
 }
 
 // 받아온 데이터에서 리뷰 수 기준 Top 20만 남기기
-function pickTop50ByReviewCount(places) {
+function pickTop20ByReviewCount(places) {
   // userRatingCount(리뷰 수) 기준으로 내림차순 정렬
   const sorted = [...places].sort(
     (a, b) => (b.userRatingCount ?? 0) - (a.userRatingCount ?? 0)
@@ -107,8 +107,8 @@ async function runDailySnapshot() {
     const places = await fetchNearbyPlacesForSnapshot();
     console.log(`받아온 가게 수: ${places.length}개`);
 
-    const top50 = pickTop50ByReviewCount(places);
-    console.log(`Top 20 추출 완료 (실제 개수: ${top50.length}개)`);
+    const top20 = pickTop20ByReviewCount(places);
+    console.log(`Top 20 추출 완료 (실제 개수: ${top20.length}개)`);
 
     const dateStr = getTodayString();
 
@@ -121,7 +121,7 @@ async function runDailySnapshot() {
         types: SNAPSHOT_TYPES,
         limit: SNAPSHOT_LIMIT,
       },
-      items: top50,
+      items: top20,
     });
 
     console.log('스냅샷 작업 전체 완료!');
