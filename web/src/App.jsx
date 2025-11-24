@@ -20,6 +20,7 @@ import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 
 import { fetchSnapshotComparison } from './lib/api';
+import Graph from './Graph';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ export default function App() {
     load();
   }, []);
 
-  // 🔧 요약 계산: 서버에서 오는 필드 이름에 맞춰 사용 (prevReviews, curReviews, reviewDiff, prevRating, curRating, ratingDiff)
+  // 서버에서 오는 필드 이름에 맞춰 사용
   const summary = useMemo(() => {
     if (!data?.changes) return null;
 
@@ -128,9 +129,6 @@ export default function App() {
                 {summary.totalReviewDelta > 0 ? '+' : ''}
                 {summary.totalReviewDelta.toLocaleString()} 개
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-                (모든 가게의 리뷰 증가량 합계)
-              </Typography>
             </Paper>
 
             <Paper sx={{ p: 2, flex: 1 }}>
@@ -165,29 +163,52 @@ export default function App() {
             </Paper>
           </Stack>
 
+          {/* 그래프 영역 */}
+          <Graph changes={data.changes} />
+
           {/* 상세 테이블 */}
           <Paper>
             <TableContainer>
               <Table size="small">
                 <TableHead>
                   <TableRow>
-                    <TableCell>가게 이름</TableCell>
+                    <TableCell sx={{ whiteSpace: 'nowrap' }}>
+                      가게 이름
+                    </TableCell>
                     <TableCell>주소</TableCell>
-                    <TableCell align="right">이전 리뷰 수</TableCell>
-                    <TableCell align="right">최신 리뷰 수</TableCell>
-                    <TableCell align="right">리뷰 증감</TableCell>
-                    <TableCell align="right">이전 평점</TableCell>
-                    <TableCell align="right">최신 평점</TableCell>
-                    <TableCell align="right">평점 증감</TableCell>
+                    <TableCell align="center" sx={{ whiteSpace: 'nowrap' }}>
+                      이전 <br />
+                      리뷰 수
+                    </TableCell>
+                    <TableCell align="center" sx={{ whiteSpace: 'nowrap' }}>
+                      최신 <br />
+                      리뷰 수
+                    </TableCell>
+                    <TableCell align="center" sx={{ whiteSpace: 'nowrap' }}>
+                      리뷰 <br />
+                      증감
+                    </TableCell>
+                    <TableCell align="center" sx={{ whiteSpace: 'nowrap' }}>
+                      이전 <br />
+                      평점
+                    </TableCell>
+                    <TableCell align="center" sx={{ whiteSpace: 'nowrap' }}>
+                      최신 <br />
+                      평점
+                    </TableCell>
+                    <TableCell align="center" sx={{ whiteSpace: 'nowrap' }}>
+                      평점 <br />
+                      증감
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {data.changes.map((c) => {
-                    // 🔧 서버 구조에 맞춰 데이터 읽기
+                    // 서버 구조에 맞춰 데이터 읽기
                     const prevReviews = c.prevReviews ?? 0;
                     const latestReviews = c.curReviews ?? 0;
                     const diffReviews =
-                      c.reviewDiff ?? (latestReviews - prevReviews);
+                      c.reviewDiff ?? latestReviews - prevReviews;
 
                     const prevRatingRaw = c.prevRating;
                     const latestRatingRaw = c.curRating;
@@ -207,8 +228,8 @@ export default function App() {
 
                     return (
                       <TableRow key={c.id}>
-                        <TableCell>
-                          <Typography variant="body2" fontWeight={600}>
+                        <TableCell sx={{ whiteSpace: 'nowrap' }}>
+                          <Typography variant="body2" fontWeight={600} noWrap>
                             {c.name || '(이름 없음)'}
                           </Typography>
                         </TableCell>
@@ -223,9 +244,11 @@ export default function App() {
                           {hasReviewChange ? (
                             <Chip
                               size="small"
-                              label={`${diffReviews > 0 ? '+' : ''}${diffReviews}`}
-                              color={diffReviews > 0 ? 'primary' : 'default'}
-                              variant={diffReviews > 0 ? 'filled' : 'outlined'}
+                              label={`${
+                                diffReviews > 0 ? '+' : ''
+                              }${diffReviews}`}
+                              color={diffReviews > 0 ? 'primary' : 'error'}
+                              variant="filled"
                             />
                           ) : (
                             '-'
@@ -241,9 +264,9 @@ export default function App() {
                           {hasRatingChange ? (
                             <Chip
                               size="small"
-                              label={`${diffRating > 0 ? '+' : ''}${diffRating.toFixed(
-                                1
-                              )}`}
+                              label={`${
+                                diffRating > 0 ? '+' : ''
+                              }${diffRating.toFixed(1)}`}
                               color={diffRating > 0 ? 'success' : 'error'}
                               variant="outlined"
                             />
